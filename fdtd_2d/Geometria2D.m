@@ -31,7 +31,7 @@ function out = Geometria2D( param , tipo)
 %  sera 0 para no cambiar todo lo demas...
 % 
 % ---------------------------------------------------------
-% Hecho por Michael Alvarez ::michael.alvarez2@upr.edu
+% By Michael Alvarez ::michael.alvarez2@upr.edu
 % ---------------------------------------------------------
 
 % close all
