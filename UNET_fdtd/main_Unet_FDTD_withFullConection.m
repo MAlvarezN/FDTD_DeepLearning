@@ -32,23 +32,23 @@ end
 XTrain = Input(:,:,:,1:90) ;
 YTrain = Target(:,:,:,1:90) ;
 figure,
-% for contM = 1:10
-%     
-% AA = XTrain(:,:,:,contM) ;
-% BB = YTrain(:,:,:,contM) ;
-% 
-%     subplot(221),
-%     imagesc(AA(:,:,1)), title('Medium')
-%     subplot(222),
-%     imagesc(AA(:,:,2)), title('Hz Vacuum')
-%     
-%     subplot(224),
-%     imagesc(BB(:,:,1)), title('Hz Medium')
-%     
-%     drawnow    
-%     colormap jet
-%     pause(.5)    
-% end
+for contM = 1:10
+    
+AA = XTrain(:,:,:,contM) ;
+BB = YTrain(:,:,:,contM) ;
+
+    subplot(221),
+    imagesc(AA(:,:,1)), title('Medium')
+    subplot(222),
+    imagesc(AA(:,:,2)), title('Hz Vacuum')
+    
+    subplot(224),
+    imagesc(BB(:,:,1)), title('Hz Medium')
+    
+    drawnow    
+    colormap jet
+    pause(.5)    
+end
 
 %% choose Unet-FDTD
 chooseNet = 1 ;
